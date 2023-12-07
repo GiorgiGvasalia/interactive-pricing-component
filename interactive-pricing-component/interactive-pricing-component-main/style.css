@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("./images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* *********************************************** */
+/*  HEADER  */
+/* **************************************************** */
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header h2 {
+  color: #293356;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.app-header h2,
+span {
+  z-index: 1;
+}
+
+header .secondary-header {
+    max-width: 36.7rem;
+    margin-top: 1.2rem;
+}
+.pricing-section {
+  display: flex;
+  gap: 10rem;
+}
+
+.app-header span {
+  color: #848ead;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header svg {
+  position: absolute;
+  width: 14.6rem;
+}
+
+.interactive-pricing-app {
+  margin-top: 6.7rem;
+}
+
+.container {
+  max-width: 54rem;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 8.4rem;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-left: 4.6rem;
+  padding-right: 4.8rem;
+  padding-bottom: 3.3rem;
+}
+
+/* ************************************* */
+/*  PRICING SECTION */
+/* ********************************************* */
+
+.pricing-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pricing-section .views {
+  color: #848ead;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pricing label {
+  color: #293356;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.pricing label {
+  color: #293356;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.pricing span {
+  color: #848ead;
+  text-align: center;
+  font-size: 16px;
+}
+
+.pricing .dollar-sign {
+  color: #293356;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+/* *********************************************** */
+/*  SLIDER  */
+/* ********************************************************* */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 2.4rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  border-radius: 5px;
+  background: #ecf0fb;
+  height: 8px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-image: url("./images/slider-icon.svg");
+
+
+  background-size: 100px;
+  border-radius: 25px;
+  background-position: center 25%;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+
+.activation {
+  cursor: pointer;
+}
+
+.activation:hover rect {
+  fill: #7aeadf;
+}
+
+.activation:active .toggle {
+  transform: rotate(0deg) translate(2em) rotate(0deg);
+}
+
+.toggle.active {
+  transform: rotate(0deg) translate(2em) rotate(0deg);
+}
+
+/* ************************************************************* */
+/* BILLING */
+/* ************************************************************* */
+
+.billing {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+  padding-top: 4rem;
+}
+
+.monthly {
+  display: flex;
+  gap: 1.6rem;
+}
+.yearly {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.monthly label,
+.yearly label {
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.yearly span {
+  color: #ff8d68;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 9.5px;
+  background: #feede8;
+  padding: 0.2rem 0.7rem;
+}
+
+.rect.active {
+  fill: #7aeadf;
+}
+
+/*  SUBSCRIBE */
+
+hr {
+  width: 100%;
+}
+
+/* **************************************************** */
+/*  SUBSCRIBE */
+/* ****************************************************** */
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pros-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.pros-section label {
+  display: flex;
+  gap: 1.6rem;
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 20.5px;
+  background: #293356;
+  color: #becdff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 1.2rem 4.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+/* ****************************************** */
+/*  RESPONSIVE DESIGN  */
+/* ****************************************** */
+
+@media (max-width: 50em) {
+
+  .container {
+    max-width: 32.7rem;
+    margin: 8.2rem auto;
+  }
+
+  .pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondary-header {
+    width: 20.7rem;
+    text-align: center;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+  }
+
+  .pros-section {
+    align-items: center;
+  }
+}
